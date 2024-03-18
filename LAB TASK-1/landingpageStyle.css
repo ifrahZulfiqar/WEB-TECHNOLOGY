@@ -89,7 +89,7 @@
 }
 
 
-.hamburger-menu {
+.btn{
     display: none;
 }
 
@@ -127,7 +127,20 @@
 
 
 
-    @media screen and (max-width: 500px) {
+    @media screen and (max-width: 550px) {
+        #carouselExampleControls{
+            height: 200px;
+            overflow: hidden;            
+        }
+        
+        .img2{
+            height: 230px;
+        }
+
+        .img2::after{
+            height: 230px;
+            overflow: hidden;
+        }
         .navbar {
             justify-content: flex-start;
             padding-left: 20px;
@@ -137,12 +150,11 @@
             display: none;
         }
     
-        .dropdown-toggle::after {
-            display: none;
-            
+        .btn {
+            display: block;            
         }
         
-        .dropdown-toggle:focus{
+        .btn:focus{
             border: none;
         }
 
@@ -154,7 +166,9 @@
             color: white;
         }
     
-
+        .btn::after {
+            display: none;
+        }
 
         .bar {
             width: 25px;
@@ -164,7 +178,7 @@
             transition: box-shadow 0.4s ease;
         }
 
-        .bar:hover,.bar:focus {
+        .btn:hover,.bar:focus {
             background-color: black;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
         }
