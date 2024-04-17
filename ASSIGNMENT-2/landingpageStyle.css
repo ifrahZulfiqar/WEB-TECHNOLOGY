@@ -75,19 +75,20 @@
 }
 
 
-#carouselExampleControls{
-    background-color: gray;
-    height: fit-content;
-}
+.carousel-item {
+    height: 460px; 
+  }
+  
+  .carousel-item img {
+    height: 100%; 
+    width: auto; 
+    object-fit: cover; 
+  }
+
 
 .row{
     width: 100%;
 }
-
-.carousel-item {
-    height: 440px;       
-}
-
 
 .btn{
     display: none;
@@ -117,19 +118,16 @@
 
 
     @media screen and (max-width: 550px) {
-        #carouselExampleControls{
-            height: 200px;
-            overflow: hidden;            
+        .carousel-item {
+            height: 200px; 
         }
+          
+        .carousel-item img {
+            height: 100%; 
+            width: auto; 
+            object-fit: cover; 
+        }        
         
-        .img2{
-            height: 230px;
-        }
-
-        .img2::after{
-            height: 230px;
-            overflow: hidden;
-        }
         .navbar {
             justify-content: flex-start;
             padding-left: 20px;
@@ -171,8 +169,7 @@
             background-color: black;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
         }
-
-    }
+}
     
 
 
