@@ -34,7 +34,6 @@
     background-color:#A81612;
     margin: 0;
 }
-
 .navbar{
     position: sticky;
     background-color: #A81612;
@@ -56,6 +55,15 @@
 .welcome h1{
  font-size: 50pt;   
 }
+
+.welcome h1{
+    font-size: 50pt;   
+   }
+   #aboutus {
+       color: #A81612;
+       text-align: center;
+       padding: 40px;
+   }
 
 .nav_l li{
     padding-left: 15pt;
@@ -119,9 +127,6 @@
 
 
     @media screen and (max-width: 550px) {
-        #carouselExampleControls{
-            z-index: 0;
-        }
         .carousel-item {
             height: 200px; 
         }
@@ -147,10 +152,6 @@
         
         .btn:focus{
             border: none;
-        }
-
-        .dropdown-menu{
-            z-index: 1;
         }
 
         .dropdown-menu:hover{
@@ -180,19 +181,3 @@
 }
     
 
-
-
-
-/* Color Theme Swatches in Hex */
-.chipotle-1-hex { color: #451401; }
-.chipotle-2-hex { color: #FF0000; }
-.chipotle-3-hex { color: #A81612; }
-.chipotle-4-hex { color: #F4F2F1; }
-.chipotle-5-hex { color: #000000; }
-
-/* Color Theme Swatches in RGBA */
-.chipotle-1-rgba { color: rgba(68, 20, 1, 1); }
-.chipotle-2-rgba { color: rgba(255, 0, 0, 1); }
-.chipotle-3-rgba { color: rgba(168, 21, 17, 1); }
-.chipotle-4-rgba { color: rgba(244, 242, 240, 1); }
-.chipotle-5-rgba { color: rgba(0, 0, 0, 1); }

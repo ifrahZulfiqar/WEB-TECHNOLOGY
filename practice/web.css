@@ -1,4 +1,33 @@
-p {
-        font-family: Verdana;
-    font-size: large;
+
+*{
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+form{
+    align-self: center;
+    justify-self: center;
+    width: 800px;
+    margin: 0 auto;
+}
+
+label{
+    width: 30%;
+}
+
+input{
+    padding: 5px 10px;
+}
+
+div{
+    margin-bottom: 20px;
+    background-color: gray;
+}
+
+div div{
+    display: inline;
 }
