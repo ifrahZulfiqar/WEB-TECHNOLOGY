@@ -19,5 +19,9 @@ server.get("/contact", function(req, res){
     res.render("contact") 
 
 });
+server.get("/menu", function(req, res){
+    res.render("menu") 
+
+});
 
 server.listen(4000)
