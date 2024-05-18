@@ -1,0 +1,28 @@
+<link rel="stylesheet" href="./CSS/menu.css">
+<div class="menu">
+    <h1>MENU</h1>   
+    <img src="./images/torilla.jpg" alt="img" class="fade-in dull-image">          
+</div>
+
+<% console.log("Inside menu.ejs File") %>
+<a href="/Products/new" class="addnew">Add New Product</a>
+<% for( let index = 1; index <= totalPages; index++ ) { %>
+    <li><a href="/Products/<%= index %>"><%= index %></a></li>
+<% } %>
+
+
+<div class="menu-container">
+<% for(let index = 0; index < products.length; index++) { %>
+    <div class="product-box">
+        <img src="./images/<%= products[index].image %>" alt="<%= products[index].name %>" class="product-image">
+        <div class="product-name"><%= products[index].name %></div>
+        <div class="product-price">RS./<%= products[index].price %></div>
+        <div class="product-description"><%= products[index].description %></div>
+        <div class="product-actions">
+            <a href="/Products/add-to-cart/<%= products[index]._id %>">Add to Cart</a>
+            <a href="/Products/delete/<%= products[index]._id %>">Delete</a>
+            <a href="/Products/edit/<%= products[index]._id %>">Edit</a>
+        </div>
+    </div>
+<% } %>
+</div>
