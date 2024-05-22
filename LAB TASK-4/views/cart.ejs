@@ -1,0 +1,40 @@
+<table>
+    <thead>
+        <tr>
+            <th >Name</th>
+            <th colspan="2">Price</th>
+            <th >Quantity</th>
+        </tr>
+    </thead>
+    <tbody>
+        <% 
+        const productQuantities = {}; // Object to store quantities of each product
+        let totalAmount = 0;
+        cart.forEach(cartItem => {
+            const productId = cartItem.productId;
+            productQuantities[productId] = (productQuantities[productId] || 0) + 1;
+        });
+        products.forEach(pdt => {
+            const quantity = productQuantities[pdt.id] || 0;
+            const subtotal = pdt.price * quantity;
+            totalAmount += subtotal;
+        });
+        products.forEach(pdt => { %>
+        <tr>
+            <td><%= pdt.name %></td>
+            <td colspan="2"><%= pdt.price %></td>
+            <td><%= productQuantities[pdt.id] || 0 %></td>
+        </tr>
+        <% }) %>
+    </tbody>
+    <tfoot>
+        <tr>
+            <td colspan="2">Total</td>
+            <td><%= cart.length %></td>
+        </tr>
+        <tr>
+            <td colspan="2">Amount</td>
+            <td colspan="2"><%= totalAmount.toFixed(2) %></td>
+        </tr>
+    </tfoot>
+</table>
