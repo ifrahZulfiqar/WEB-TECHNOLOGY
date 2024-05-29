@@ -1,0 +1,43 @@
+/* Style for the form container */
+form {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for the input fields */
+.input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid #000;
+    border-bottom: 2px solid #A81612;
+    border-right: 2px solid #A81612;
+    border-radius: 7px;
+    box-sizing: border-box;
+    font-size: 16px;
+    
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #A81612;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+/* Change background color of submit button on hover */
+input[type="submit"]:hover {
+    color: #000;
+}
+
+

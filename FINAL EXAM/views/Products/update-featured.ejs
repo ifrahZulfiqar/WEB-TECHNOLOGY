@@ -1,0 +1,9 @@
+<body>
+    <h1>Update Featured Status for <%= product.name %></h1>
+    <form action="/products/update-featured/<%= product._id %>" method="post">
+        <label for="isFeatured">Featured:</label>
+        <input type="checkbox" id="isFeatured" name="isFeatured" <%= product.isFeatured ? 'checked' : '' %>>
+        <br>
+        <button type="submit">Update Featured Status</button>
+    </form>
+</body>

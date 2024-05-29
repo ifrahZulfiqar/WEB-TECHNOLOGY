@@ -1,0 +1,259 @@
+.contain{
+    width: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+.ri{
+    display: inline;
+    width:fit-content ;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin: 2px;
+    
+    }
+
+#mail{
+    border-left: 1px solid grey;
+        
+}
+
+#logo{
+    width: 90px;
+    height: 90px;
+}
+.nav_l a{
+    text-decoration-line: none;
+    color: white
+    }
+
+.nav_l {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    background-color:#A81612;
+    margin: 0;
+}
+.navbar{
+    position: sticky;
+    background-color: #A81612;
+    z-index: 2;
+    top: 0;
+    
+}
+.dropdown-menu{
+    background-color: #A81612;
+    z-index: 2;
+        
+}
+
+.welcome{
+    color: #A81612;
+    padding-top: 40px;
+    text-align: center;
+}
+.welcome h1{
+ font-size: 50pt;   
+}
+
+.welcome h1{
+    font-size: 50pt;   
+   }
+   #aboutus {
+       color: #A81612;
+       text-align: center;
+       padding: 40px;
+   }
+
+.nav_l li{
+    padding-left: 15pt;
+    justify-content:space-between;
+    font-size: 15pt;
+}
+.nav_l a:hover{
+    color: black;
+}
+
+
+.dropdown-menu .dropdown-item {
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2); 
+}
+
+.dropdown-menu .dropdown-item:hover{
+    background-color: rgba(146, 137, 137, 0.564);
+}
+
+
+.carousel-item {
+    height: 460px; 
+  }
+  
+  .carousel-item img {
+    height: 100%; 
+    width: auto; 
+    object-fit: cover; 
+  }
+
+
+.row{
+    width: 100%;
+}
+
+.btn{
+    display: none;
+}
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    margin: 4px 0;
+}
+
+
+
+.menu a {
+    color: #333;
+    text-decoration: none;
+    padding: 10px;
+}
+
+
+
+    @media screen and (max-width: 550px) {
+        .carousel-item {
+            height: 200px; 
+        }
+          
+        .carousel-item img {
+            height: 100%; 
+            width: auto; 
+            object-fit: cover; 
+        }        
+        
+        .navbar {
+            justify-content: flex-start;
+            padding-left: 20px;
+        }
+    
+        .nav_l {
+            display: none;
+        }
+    
+        .btn {
+            display: block;            
+        }
+        
+        .btn:focus{
+            border: none;
+        }
+
+        .dropdown-menu:hover{
+            color: #000;
+        }
+
+        .dropdown-menu a{
+            color: white;
+        }
+    
+        .btn::after {
+            display: none;
+        }
+
+        .bar {
+            width: 25px;
+            height: 3px;
+            background-color: white;
+            margin: 4px 0;
+            transition: box-shadow 0.4s ease;
+        }
+
+        .btn:hover,.bar:focus {
+            background-color: black;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* styles.css */
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Container for Featured Products */
+.featured-products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /* Adjust alignment as needed */
+    gap: 20px; /* Adjust spacing between products */
+}
+
+.featured-products ul{
+    list-style: none;
+}
+
+/* Individual Product Box */
+.product {
+    width: 300px; /* Adjust product box width as needed */
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.product:hover {
+    transform: scale(1.05);
+}
+
+/* Product Image */
+.product img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Product Details */
+.product h2 {
+    margin-top: 10px;
+    font-size: 1.5em;
+    color: #333;
+}
+
+.product p {
+    margin: 5px 0;
+    color: #666;
+}
+
+/* View Details Link */
+.view-details-btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: #007bff;
+    border: #007bff;
+    color: #fff;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+}
+
+.product a:hover {
+    background-color: #0056b3;
+}
+
+
